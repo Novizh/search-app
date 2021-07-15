@@ -1,6 +1,24 @@
 import React from 'react';
 import { search } from '../store/actions/personAction';
 import { useDispatch } from 'react-redux';
+import toastr from 'toastr';
+toastr.options = {
+    "closeButton": true,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": true,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+}
 
 function Sidebar() {
     const dispatch = useDispatch();
@@ -9,6 +27,7 @@ function Sidebar() {
         // this will accept string name and pass it to the action to render search result, default is none
         event.preventDefault();
         dispatch(search(name));
+        toastr.success('Person selected');
     }
 
     return (
