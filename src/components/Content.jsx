@@ -5,8 +5,7 @@ function Content() {
     const link = useSelector(state => state.personReducer.link)
 
     useEffect(() => {
-        console.log(`page rendered`);
-        console.log(link);
+        
     }, [link])
 
     return (
