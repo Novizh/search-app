@@ -13,10 +13,10 @@ function Home() {
                     <Sidebar />
                 </div>
                 <div className="col mt-3 mx-3">
-                    <div className="row" style={{height: "45vh"}}>
+                    <div className="row">
                         <SearchResult />
                     </div>
-                    <div className="row mt-2" style={{height: "45vh"}}>
+                    <div className="row">
                         <Content />
                     </div>
                 </div>
