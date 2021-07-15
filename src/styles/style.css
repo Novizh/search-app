@@ -1,0 +1,17 @@
+body {
+    background-color: grey;
+}
+
+li {
+    margin-top: 6px;
+}
+
+.link-dark {
+    text-decoration: none;
+    margin-left: 2vw;
+}
+
+.card {
+    padding: 0 !important;
+    overflow: auto;
+}
