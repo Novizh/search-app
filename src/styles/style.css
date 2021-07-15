@@ -13,5 +13,16 @@ li {
 
 .card {
     padding: 0 !important;
+}
+
+.card-body {
     overflow: auto;
+}
+
+.search-result {
+    overflow: auto;
+}
+
+.content {
+    overflow: hidden !important;
 }
